@@ -1,0 +1,2 @@
+--crea BD
+CREATE DATABASE test;
