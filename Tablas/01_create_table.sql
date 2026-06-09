@@ -46,3 +46,30 @@ CREATE TABLE persona5(
     PRIMARY KEY(id)
     CHECK (edad >= 18)
 );
+
+------------default----------------------
+CREATE TABLE persona6(
+    id int NOT NULL,
+    nombre varchar(25) NOT NULL,
+    edad int,
+    email varchar(50),
+    fecha_creacion datetime DEFAULT CURRENT_TIMESTAMP(),
+    UNIQUE(id),
+    PRIMARY KEY(id)
+    CHECK (edad >= 18)
+);
+
+------------default----------------------
+CREATE TABLE persona7(
+    id int NOT NULL AUTO_INCREMENT,
+    nombre varchar(25) NOT NULL,
+    edad int,
+    email varchar(50),
+    fecha_creacion datetime DEFAULT CURRENT_TIMESTAMP(),
+    UNIQUE(id),
+    PRIMARY KEY(id)
+    CHECK (edad >= 18)
+);
+
+
+
