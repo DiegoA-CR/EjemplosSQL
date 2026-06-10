@@ -55,3 +55,7 @@ DELIMITER ;
 
 --actualizamos valor 
 UPDATE users SET email= 'correo@correo.com' WHERE user_id = 1;
+
+--eliminar trigger
+
+DROP TRIGGER tg_email;
